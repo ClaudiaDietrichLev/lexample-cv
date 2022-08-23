@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Figtree", sans-serif;
+}
+h1,
+h2,
+h3 {
+  font-family: "Paytone One", sans-serif;
+}
+.header {
+  padding: 40px 25px;
+  text-align: center;
+  background-color: beige;
+}
+.main {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
