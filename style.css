@@ -9,14 +9,39 @@ h1,
 h2,
 h3 {
   font-family: "Paytone One", sans-serif;
+  font-weight: 400;
+  text-decoration: none;
 }
 .header {
   padding: 40px 25px;
   text-align: center;
-  background-color: beige;
+  background-color: lavender;
 }
-.main {
-  padding: 20px;
+.main, footer{
   max-width: 800px;
   margin: 0 auto;
+}
+article + article, footer {
+  margin-top: 50px;
+  border-top: 2px dotted rebeccapurple;
+}
+
+nav {
+word-spacing: 20px;
+margin-top: 40px;
+}
+
+nav a:link{
+  color: rebeccapurple;
+  text-decoration: none;
+  border: 2px solid black;
+  padding: 5px;
+}
+
+nav a:hover{
+  background-color: plum; 
+}
+
+nav a:active {
+  border-color: mediumvioletred;
 }
