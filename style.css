@@ -3,8 +3,17 @@
 }
 body {
   margin: 0;
+}
+
+html{
   font-family: "Figtree", sans-serif;
 }
+
+::selection{
+  background-color: rebeccapurple;
+  color: white;
+}
+
 h1,
 h2,
 h3 {
@@ -19,8 +28,14 @@ h3 {
 }
 .main, footer{
   max-width: 800px;
-  margin: 0 auto;
+  margin: auto;
+  padding: 15px;
 }
+
+.profession::after {
+  content: "👩‍💻";
+}
+
 article + article, footer {
   margin-top: 50px;
   border-top: 2px dotted rebeccapurple;
@@ -31,17 +46,18 @@ word-spacing: 20px;
 margin-top: 40px;
 }
 
-nav a:link{
+.nav-links:link{
   color: rebeccapurple;
   text-decoration: none;
   border: 2px solid black;
   padding: 5px;
 }
 
-nav a:hover{
+.nav-links:hover{
   background-color: plum; 
 }
 
-nav a:active {
+.nav-links:active {
   border-color: mediumvioletred;
 }
+
