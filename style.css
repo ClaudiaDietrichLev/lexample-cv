@@ -25,6 +25,7 @@ h3 {
   padding: 40px 25px;
   text-align: center;
   background-color: lavender;
+  position:relative;
 }
 .main, footer{
   max-width: 800px;
@@ -63,4 +64,18 @@ margin-top: 40px;
 
 .experience-header {
   display: inline;
+}
+
+.article-header{
+  position:relative;
+  right: 10px;
+}
+
+.hire-me{
+  position: fixed;
+  border: 1px solid black;
+  background-color:plum;
+  padding: 5px;
+  top: 0px;
+  right: 0px;
 }
