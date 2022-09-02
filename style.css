@@ -176,6 +176,12 @@ Farbe setzen  */
   right: .3rem;
 }
 
+.header:hover .hire-me,
+.header:focus-within .hire-me{
+  transform-origin: 100% 100%;
+  transform: scale(1.2);
+}
+
 .hire-me{
   position: absolute;
   border: 2px solid var(--clr-font);
@@ -184,6 +190,7 @@ Farbe setzen  */
   margin: 0;
   top: 0px;
   right: 0px;
+  transistion: transform 1s;
 }
 
 @media screen and (min-width:992px){
