@@ -21,6 +21,14 @@ html{
   background-color:var(--clr-bg-main);
 }
 
+/*Breakpoint für dunkles Farbschema*/
+@media screen and (prefers-color-scheme: dark) {
+  body {
+    --clr-bg-main: black;
+    --clr-font: white;
+  }
+}
+
 /*Breakpoint - Grössere Schrift)*/
 @media screen and (min-width:768px){
   html {
@@ -126,6 +134,7 @@ Farbe setzen  */
 }
 
 
+/*Hover und Focus der Nav-Links setzen und animieren*/
 .nav-links:hover,
 .nav-links:focus {
   background-color:var(--clr-font-acc); 
@@ -136,6 +145,8 @@ Farbe setzen  */
 .nav-links:active {
   color: rgb(12, 1, 8);
 }
+
+/*Breakpoint für Navigation ... von Vertikal nach Horizontal*/
 @media screen and (min-width:768px){
   .nav{
     flex-direction: row;
@@ -151,8 +162,19 @@ Farbe setzen  */
   .nav-links:active {
     border-color:var(--clr-link-hover);
   }
+
+  .main-article {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+
+  .article-wrapper{
+    margin-top: 3rem;
+    margin-left: 3rem;
+  }
 }
 
+/*Ausblenden der Navigation beim Drucken*/
 @media print {
   nav {
     display:none;
@@ -160,11 +182,13 @@ Farbe setzen  */
 
 }
 
+/*Header Experience als Flexbox deklarieren*/
 .experience-header {
   display: flex;
   flex-direction: column;
 }
 
+/*Breakpoint- Experience-Header nebeneinander*/
 @media screen and (min-width:768px){
   .experience-header{
     flex-direction: row;
@@ -190,7 +214,7 @@ Farbe setzen  */
   margin: 0;
   top: 0px;
   right: 0px;
-  transistion: transform 1s;
+  transition: transform 1s;
 }
 
 @media screen and (min-width:992px){
